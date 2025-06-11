@@ -66,7 +66,19 @@
     transition: all 0.3s;
     white-space: nowrap;
 }
-            
+.nav-button-menu {
+    padding: 0.7rem 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase; /*капс*/
+    cursor: pointer;
+    transition: all 0.3s; /*плавный переход для всех свойств*/
+    white-space: nowrap;/*нельзяьделать пренос*/
+    width: 100%;
+}             
 .nav-button:hover {
     background-color: #fff;
     color: #000;
@@ -135,9 +147,41 @@
     cursor: pointer;
     transition: all 0.3s;
     white-space: nowrap;
-    
-}          
+    max-width: 300px !important;
+}      
 .see-button:hover {
     background-color: #000000;
     color: rgb(249, 248, 219);
+}
+h3{
+    font-family: 'Georgia', serif; 
+    font-weight: bold !important;
+    
+}
+h1{
+    color: #000;
+    font-family: 'Georgia', serif;
+    font-weight: bold !important;
+} 
+hr{
+    height: 4px;
+    background:black;
+    border: none;
+    margin: 20px 0 !important;
+    border-radius: 2px;
+    opacity: 1 !important;
+}
+h6{ 
+    color: #000;
+    font-family: 'Georgia', serif;
+}
+.card-img{
+    object-fit: cover;
+}
+.card-img2{
+    object-fit: cover;  
+    border-radius: 8px;
+}
+.card-exp{
+    border: 1px solid #000000;
 }

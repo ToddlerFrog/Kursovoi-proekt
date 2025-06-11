@@ -104,9 +104,15 @@ body {
             </div>
             
             <div class="buttons-container">
-                <button class="nav-button" onclick="location.assign('Home.html')">Home</button>
-                <button class="nav-button" onclick="location.assign('Visit.html')">Visit</button>
-                <button class="nav-button" onclick="location.assign('Expositions.html')">Expositions</button>
+                <a href="Home.html">
+                <button class="nav-button">Home</button>
+                </a>
+                <a href="Visit.html">
+                <button class="nav-button">Visit</button>
+                </a>
+                <a href="Expositions.html">
+                <button class="nav-button">Expositions</button>
+                </a>
             </div>
             
             <button class="menu-toggle" id="menuToggle">☰</button>
@@ -115,10 +121,16 @@ body {
                 <div class="mobile-search">
                     <input type="text" class="search-input" placeholder="Search...">
                 </div>
-                <div class="mobile-buttons">
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Home.html')">Home</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Visit.html')">Visit</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Expositions.html')">Expositions</button>
+                 <div class="mobile-buttons">
+                    <a href="Home.html">
+                    <button class="nav-button-menu">Home</button>
+                    </a>
+                    <a href="Visit.html">
+                    <button class="nav-button-menu">Visit</button>
+                    </a>
+                    <a href="Expositions.html">
+                    <button class="nav-button-menu">Expositions</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -133,14 +145,14 @@ body {
     <div class="row justify-content-center">
 
         <div class="container my-4 d-flex justify-content-center gap-4">
-            <button class="see-button" style="max-width: 300px; width: 100%;">Purchse Tickets</button>
-            <button class="see-button" style="max-width: 300px; width: 100%;">Museum map</button>
+            <button class="see-button">Purchse Tickets</button>
+            <button class="see-button">Museum map</button>
         </div>
         <div class="col-lg-4 col-md-5 mb-4">
-            <div class="card h-100" style="border: none">
-                <div class="card-body" >
-                    <h3 style="color: #000; font-family: 'Georgia', serif; font-weight: bold">Hours</h3>
-                    <h4 class="h6 text-muted">Operating Hours:</h4>
+            <div class="card h-100 border-0">
+                <div class="card-body">
+                    <h3>Hours</h3>
+                    <h6 class="text-muted">Operating Hours:</h6>
                      <!-- Лист с часами-->   
                     <ul class="list-unstyled">
                         <li>Monday <span class="float-end">Closed</span></li>
@@ -152,7 +164,7 @@ body {
                         <li>Sunday <span class="float-end">10AM – 7PM</span></li>
                     </ul>
                     <!-- Лист с выходными-->
-                    <h4 class="h6 text-muted mt-4">Museum Holidays:</h4>
+                    <h6 class="text-muted mt-4">Museum Holidays:</h6>
                     <ul class="list-unstyled">
                         <li>Easter Sunday <span class="float-end">Closed</span></li>
                         <li>Christmas Eve <span class="float-end">Closed</span></li>
@@ -165,17 +177,17 @@ body {
         </div>
 
         <div class="col-lg-6 col-md-7 mt-3">
-            <h3 style="color: #000; font-family: 'Georgia', serif; font-weight: bold" class="start">Location</h3>
-            <h6 style="color: #000; font-family: 'Georgia', serif">47 avenue du Marechal Juin, 06700, Paris, France</h6>
+            <h3 class="start">Location</h3>
+            <h6>47 avenue du Marechal Juin, 06700, Paris, France</h6>
             <div>
                 <img src="images/map.png" class="h-100 w-100">
             </div>
         </div>
 
-        <hr style="height: 4px; background:black; border: none; margin: 20px 0; border-radius: 2px; opacity: 1;">
+        <hr>
         <!-- Прайс-->
         <div class="col-lg-4 col-md-6 mb-4">
-            <h3 style="color: #000; font-family: 'Georgia', serif; font-weight: bold">Admission</h3>
+            <h3>Admission</h3>
             <ul class="list-unstyled">
                 <li class="holiday-closed">EMembers<span class="float-end">FREE</span></li>
                 <li class="holiday-closed">Adults<span class="float-end">$22</span></li>
@@ -187,12 +199,12 @@ body {
         </div>
         <!--Правила-->
         <div class="col-lg-4 col-md-6 mb-4">
-            <h3 style="color: #000; font-family: 'Georgia', serif; font-weight: bold">Visitor Tips:</h3>
-            <h6 style="color: #000; font-family: 'Georgia', serif">No photography or video recording, maintain a
+            <h3>Visitor Tips:</h3>
+            <p>No photography or video recording, maintain a
                 respectful noise level, avoid touching the artworks,
                 and follow staff instructions. Food and drinks are
                 not allowed inside the galleries, and large bags must
-                be left in designated areas.</h6>
+                be left in designated areas.</p>
         </div>    
     </div>
     </div>
@@ -233,14 +245,6 @@ body {
         </div>
     </footer>  
     
-    <script>
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-    </script> 
+    <script src="script.js"></script> 
 </body>
 </html>

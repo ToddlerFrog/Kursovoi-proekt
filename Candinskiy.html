@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candinskiy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carysel.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style>
@@ -104,10 +103,16 @@ body {
                 <input type="text" class="search-input" placeholder="Search exhibitions...">
             </div>
             
-            <div class="buttons-container">
-                <button class="nav-button" onclick="location.assign('Home.html')">Home</button>
-                <button class="nav-button" onclick="location.assign('Visit.html')">Visit</button>
-                <button class="nav-button" onclick="location.assign('Expositions.html')">Expositions</button>
+           <div class="buttons-container">
+                <a href="Home.html">
+                <button class="nav-button">Home</button>
+                </a>
+                <a href="Visit.html">
+                <button class="nav-button">Visit</button>
+                </a>
+                <a href="Expositions.html">
+                <button class="nav-button">Expositions</button>
+                </a>
             </div>
             
             <button class="menu-toggle" id="menuToggle">☰</button>
@@ -116,10 +121,16 @@ body {
                 <div class="mobile-search">
                     <input type="text" class="search-input" placeholder="Search...">
                 </div>
-                <div class="mobile-buttons">
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Home.html')">Home</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Visit.html')">Visit</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Expositions.html')">Expositions</button>
+                 <div class="mobile-buttons">
+                    <a href="Home.html">
+                    <button class="nav-button-menu">Home</button>
+                    </a>
+                    <a href="Visit.html">
+                    <button class="nav-button-menu">Visit</button>
+                    </a>
+                    <a href="Expositions.html">
+                    <button class="nav-button-menu">Expositions</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -132,18 +143,18 @@ body {
 
     <div class="container my-4">
     <div class="row justify-content-center">
-        <h3 style="font-family: 'Georgia', serif; font-weight: bold">Explore the beauty of our finest artworks</h3>
+        <h3>Explore the beauty of our finest artworks</h3>
         <p class="card-text flex-grow-1">Our museum's artwork page has a curated selection of our most notable pieces and collections.
             Featuring detailed descriptions and high-quality images, it offers insights into the artistry and
             history behind each work. Enjoy a virtual tour of our collection from the comfort of your home.</p>
-        <h3 style="font-family: 'Georgia', serif; font-weight: bold">What can you see:</h3>
+        <h3>What can you see:</h3>
         <div class="col-lg-10 col-12 card-container mt-4">
                 <div class="row g-4">
                     <!-- Карточка 1 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/cur1.jpg" class=" w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/cur1.jpg" class=" w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">Yellow-red-blue</h5>
                             </div>
                         </div>
@@ -152,8 +163,8 @@ body {
                     <!-- Карточка 2 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car2.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car2.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">Marnau</h5>
                             </div>
                         </div>
@@ -162,8 +173,8 @@ body {
                     <!-- Карточка 3 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car3.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car3.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">The Blue Raider</h5>
                             </div>
                         </div>
@@ -171,8 +182,8 @@ body {
                     <!-- Карточка 4 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car4.jpg" class=" w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car4.jpg" class=" w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">No name</h5>
                             </div>
                         </div>
@@ -181,8 +192,8 @@ body {
                     <!-- Карточка 5 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car6.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car6.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">Composition X</h5>
                             </div>
                         </div>
@@ -191,8 +202,8 @@ body {
                     <!-- Карточка 6 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car5.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car5.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">Moscow</h5>
                             </div>
                         </div>
@@ -200,8 +211,8 @@ body {
                     <!-- Карточка 7 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/car7.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body" style=" border: 1px solid #000000;">
+                            <img src="images/car7.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">White ellipse</h5>
                             </div>
                         </div>
@@ -210,8 +221,8 @@ body {
                     <!-- Карточка 8 -->
                     <div class="col-lg-3 col-6">
                         <div class="custom-card h-100">
-                            <img src="images/exp1.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;">
-                            <div class="card-body " style=" border: 1px solid #000000;">
+                            <img src="images/exp1.jpg" class="w-100 h-75 mb-3 card-img">
+                            <div class="card-body card-exp">
                                 <h5 class="card-text text-center">Composition VII</h5>
                             </div>
                         </div>
@@ -255,14 +266,7 @@ body {
             </div>
         </div>
     </footer> 
-    <script>
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-    </script> 
+
+    <script src="script.js"></script> 
 </body>
 </html>

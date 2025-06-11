@@ -35,22 +35,19 @@
         display: flex;
         flex-direction: column;
         line-height: 1.2; /*высота строки*/
-    }
-            
+    }       
     .logo-line {
         font-size: 1.3rem;
         font-weight: normal;
         font-family: 'Georgia', serif;
     }
-
     /*Поисковая строка */
     .search-container {
         flex: 1; /* Элемент может растягиваться */
         min-width: 100px;
         max-width: 500px;
         margin: 0 auto;
-    }
-            
+    }       
     .search-input {
         width: 100%;
         padding: 0.6rem 1rem; /*сверху/снизу и слева/справа*/
@@ -63,7 +60,6 @@
     .search-input::placeholder {
         color: #999;
     }
-
     /* Кнопки */
     .buttons-container {
         display: flex;
@@ -81,8 +77,20 @@
         cursor: pointer;
         transition: all 0.3s; /*плавный переход для всех свойств*/
         white-space: nowrap;/*нельзяьделать пренос*/
-        }
-            
+        }  
+    .nav-button-menu {
+        padding: 0.7rem 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase; /*капс*/
+        cursor: pointer;
+        transition: all 0.3s; /*плавный переход для всех свойств*/
+        white-space: nowrap;/*нельзяьделать пренос*/
+        width: 100%;
+        }      
     .nav-button:hover {
         background-color: #fff;
         color: #000;
@@ -118,8 +126,7 @@
         height: 700px;
         width: 100%;
         overflow: hidden; /*обрезает лишний контент*/
-    }    
-     
+    }     
     .banner-img {
         width: 100%;
         height: 100%;
@@ -136,6 +143,9 @@
     .card {
         background-color: rgb(249, 248, 219);
     }
+    .card-exp{
+        border: 1px solid #000000;
+    }
     body {  
         background-color: rgb(249, 248, 219);  
     }  
@@ -151,10 +161,25 @@
     .hologram {
     transition: transform 0.5s;
     }
-
     .hologram:hover {
         transform: perspective(800px) rotateY(20deg) scale(1.05);
         filter: drop-shadow(0 0 10px rgba(255, 241, 114, 0.7));
+    }
+    .card-img{
+        object-fit: cover;
+    }
+    .card-img2{
+        object-fit: cover;  
+        border-radius: 8px;
+    }
+    h3{
+        font-family: 'Georgia', serif; 
+        font-weight: bold;
+    }
+    h1{
+        color: #000;
+        font-family: 'Georgia', serif;
+        font-weight: bold;
     }
     @media (max-width: 1200px) {
         .header-container {
@@ -236,11 +261,17 @@
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Search exhibitions...">
             </div>
-            
+            <!-- ПЕРЕДЕЛАТЬ БРАУЗЕРНЫЕ СОБЫТИЯ  -->
             <div class="buttons-container">
-                <button class="nav-button" onclick="location.assign('Home.html')">Home</button>
-                <button class="nav-button" onclick="location.assign('Visit.html')">Visit</button>
-                <button class="nav-button" onclick="location.assign('Expositions.html')">Expositions</button>
+                <a href="Home.html">
+                <button class="nav-button">Home</button>
+                </a>
+                <a href="Visit.html">
+                <button class="nav-button">Visit</button>
+                </a>
+                <a href="Expositions.html">
+                <button class="nav-button">Expositions</button>
+                </a>
             </div>
             
             <button class="menu-toggle" id="menuToggle">☰</button>
@@ -250,9 +281,15 @@
                     <input type="text" class="search-input" placeholder="Search...">
                 </div>
                 <div class="mobile-buttons">
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Home.html')">Home</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Visit.html')">Visit</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Expositions.html')">Expositions</button>
+                    <a href="Home.html">
+                    <button class="nav-button-menu">Home</button>
+                    </a>
+                    <a href="Visit.html">
+                    <button class="nav-button-menu">Visit</button>
+                    </a>
+                    <a href="Expositions.html">
+                    <button class="nav-button-menu">Expositions</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -263,20 +300,18 @@
         <div class="banner-text">Welcome to the National Museum of Art</div>
     </div>
 
-
-
     <div class="container my-5">
     <div class="row justify-content-center"> <!-- Центрирует элементы по главной оси -->
         <div class="col-12 col-lg-10">
         <div class="card border-0"> <!--полностью убирает границу -->
             <div class="row g-0 align-items-center"> <!-- g-0 убирает промежутки между колонками -->
             <div class="col-md-6">
-                <img src="images/2.jpg" class="img-fluid rounded hologram " style="object-fit: cover;">
+                <img src="images/2.jpg" class="img-fluid rounded hologram card-img">
             </div>
 <!-- 1 инфо-->
             <div class="col-md-6">
                 <div class="card-body h-100 d-flex flex-column">
-                <h3 style="font-family: 'Georgia', serif; font-weight: bold">See The World</h3>
+                <h3>See The World</h3>
                 <p class="card-text flex-grow-1">The National Museum of Art (NMA) in France is
                     a prestigious institution showcasing a diverse
                     collection of artworks from various periods and
@@ -298,13 +333,13 @@
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
         <div class="card border-0">
-            <div class="row g-0 align-items-center"> <!-- g-0 убирает промежутки между колонками -->
+            <div class="row g-0 align-items-center">
             <div class="col-md-6">
-                <img src="images/3.jpg" class="img-fluid rounded hologram " style="object-fit: cover;">
+                <img src="images/3.jpg" class="img-fluid rounded hologram card-img">
             </div>
             <div class="col-md-6">
                 <div class="card-body h-100 d-flex flex-column">
-                <h3 style="font-family: 'Georgia', serif; font-weight: bold">On View</h3>
+                <h3>On View</h3>
                 <p class="card-text flex-grow-1">There's always something new on view at The
                 National Museum of Art (NMA). Enjoy the new
                 exhibits that we currently have. The museum's
@@ -318,7 +353,7 @@
     </div>
     </div>
 
-    <h1 style="color: #000; font-family: 'Georgia', serif; font-weight: bold" class="text-center">Current expositions</h1>
+    <h1 class="text-center">Current expositions</h1>
     
     <div class="container-fluid my-4">
         <div class="row justify-content-center">
@@ -327,8 +362,10 @@
                     <!-- Карточка 1 -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="custom-card h-100">
-                            <img src="images/cur1.jpg" class=" w-100 h-75 mb-3" style="object-fit: cover;  border-radius: 8px" onclick="location.assign('Candinskiy.html')">
-                            <div class="card-body rounded-pill" style=" border: 1px solid #000000;">
+                            <a href="Candinskiy.html">
+                                <img src="images/cur1.jpg" class=" w-100 h-75 mb-3">
+                            </a>
+                            <div class="card-body card-exp rounded-pill">
                                 <h5 class="card-text text-center">Candinsky</h5>
                             </div>
                         </div>
@@ -337,8 +374,8 @@
                     <!-- Карточка 2 -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="custom-card h-100">
-                            <img src="images/cur2.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;  border-radius: 8px">
-                            <div class="card-body rounded-pill" style=" border: 1px solid #000000;">
+                            <img src="images/cur2.jpg" class="w-100 h-75 mb-3">
+                            <div class="card-body card-exp rounded-pill">
                                 <h5 class="card-text text-center">van Gogh</h5>
                             </div>
                         </div>
@@ -347,8 +384,8 @@
                     <!-- Карточка 3 -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="custom-card h-100">
-                            <img src="images/cur3.jpg" class="w-100 h-75 mb-3" style="object-fit: cover;  border-radius: 8px">
-                            <div class="card-body rounded-pill" style=" border: 1px solid #000000;">
+                            <img src="images/cur3.jpg" class="w-100 h-75 mb-3">
+                            <div class="card-body card-exp rounded-pill">
                                 <h5 class="card-text text-center">Malevich</h5>
                             </div>
                         </div>
@@ -392,14 +429,7 @@
             </div>
         </div>
     </footer>  
-    <script>
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-    </script> 
+
+    <script src="script.js"></script> 
 </body>
 </html>

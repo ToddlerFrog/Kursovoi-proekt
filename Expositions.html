@@ -101,10 +101,16 @@ body {
                 <input type="text" class="search-input" placeholder="Search exhibitions...">
             </div>
             
-            <div class="buttons-container">
-                <button class="nav-button" onclick="location.assign('Home.html')">Home</button>
-                <button class="nav-button" onclick="location.assign('Visit.html')">Visit</button>
-                <button class="nav-button" onclick="location.assign('Expositions.html')">Expositions</button>
+           <div class="buttons-container">
+                <a href="Home.html">
+                <button class="nav-button">Home</button>
+                </a>
+                <a href="Visit.html">
+                <button class="nav-button">Visit</button>
+                </a>
+                <a href="Expositions.html">
+                <button class="nav-button">Expositions</button>
+                </a>
             </div>
             
             <button class="menu-toggle" id="menuToggle">☰</button>
@@ -113,10 +119,16 @@ body {
                 <div class="mobile-search">
                     <input type="text" class="search-input" placeholder="Search...">
                 </div>
-                <div class="mobile-buttons">
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Home.html')">Home</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Visit.html')">Visit</button>
-                    <button class="nav-button" style="width: 100%;" onclick="location.assign('Expositions.html')">Expositions</button>
+                 <div class="mobile-buttons">
+                    <a href="Home.html">
+                    <button class="nav-button-menu">Home</button>
+                    </a>
+                    <a href="Visit.html">
+                    <button class="nav-button-menu">Visit</button>
+                    </a>
+                    <a href="Expositions.html">
+                    <button class="nav-button-menu">Expositions</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,24 +141,26 @@ body {
 
     <div class="container my-4">
     <div class="row justify-content-center">
-        <h3 style="font-family: 'Georgia', serif; font-weight: bold">Explore the beauty of our finest artworks</h3>
+        <h3>Explore the beauty of our finest artworks</h3>
         <p class="card-text flex-grow-1">Our museum's artwork page has a curated selection of our most notable pieces and collections.
         Featuring detailed descriptions and high-quality images, it offers insights into the artistry and
         history behind each work. Enjoy a virtual tour of our collection from the comfort of your home.</p>  <!--занял всё свободное место -->
 
-        <hr style="height: 4px; background:black; border: none; margin: 20px 0; border-radius: 2px; opacity: 1;">
+        <hr>
 
-        <h1 style="color: #000; font-family: 'Georgia', serif; font-weight: bold" class="text-end">Current expositions</h1>
+        <h1 class="text-end">Current expositions</h1>
         <!--1-я экспозиция -->
         <div class="col-12 col-lg-10 mt-4">
         <div class="card border-0 ">
             <div class="row g-0 align-items-center">
                 <div class="col-md-6">
-                    <img src="images/exp1.jpg" class="custom-card2 rounded w-100" onclick="location.assign('Candinskiy.html')">
+                    <a href="Candinskiy.html">
+                        <img src="images/exp1.jpg" class="custom-card2 rounded w-100">
+                    </a>
                 </div>
                 <div class="col-md-6 p-0">
                     <div class="card-body d-flex flex-column">
-                    <h3 style="font-family: 'Georgia', serif; font-weight: bold">Kandinsky</h3>
+                    <h3>Kandinsky</h3>
                     <p class="card-text flex-grow-1">Step into the vibrant, abstract universe of Wassily Kandinsky at this stunning exhibition! 
                         Explore his revolutionary use of color, form, and emotion through iconic masterpieces that shaped modern art. From bold 
                         geometric compositions to dreamlike improvisations, each work reveals Kandinsky’s genius and his belief in art’s spiritual power.</p>
@@ -164,7 +178,7 @@ body {
                 </div>
                 <div class="col-md-6">
                     <div class="card-body d-flex flex-column">
-                    <h3 style="font-family: 'Georgia', serif; font-weight: bold">van Gogh</h3>
+                    <h3>van Gogh</h3>
                     <p class="card-text flex-grow-1">Experience the passion and brilliance of Vincent van Gogh at this unforgettable exhibition! 
                         Marvel at his iconic swirls of Starry Night, glowing Sunflowers, and vivid landscapes that pulse with emotion. Discover the 
                         turbulent genius behind the brushstrokes—his dreams, struggles, and unparalleled vision that transformed art forever.</p>
@@ -182,7 +196,7 @@ body {
                 </div>
                 <div class="col-md-6">
                     <div class="card-body d-flex flex-column">
-                    <h3 style="font-family: 'Georgia', serif; font-weight: bold">Malevich</h3>
+                    <h3>Malevich</h3>
                     <p class="card-text flex-grow-1">Dive into the bold, revolutionary art of Kazimir Malevich, the pioneer of abstract geometric forms. 
                         This exhibition showcases his iconic Black Square—a symbol of artistic rebellion—alongside striking Suprematist works that shattered 
                         traditional boundaries. Explore how Malevich reduced painting to pure feeling, using stark shapes and vibrant colors to create a 
@@ -193,11 +207,11 @@ body {
         </div>
         </div>
 
-        <button class="see-button" style="max-width: 300px; width: 100%;">See all</button>
+        <button class="see-button">See all</button>
 
-        <hr style="height: 4px; background:black; border: none; margin: 20px 0; border-radius: 2px; opacity: 1;">
+        <hr>
 
-        <h1 style="color: #000; font-family: 'Georgia', serif; font-weight: bold" class="text-end">Future collections</h1>
+        <h1 class="text-end">Future collections</h1>
         <!--4-я экспозиция -->
         <div class="col-12 col-lg-10 mt-4">
         <div class="card border-0 p-0">
@@ -207,7 +221,7 @@ body {
             </div>
             <div class="col-md-6">
                 <div class="card-body d-flex flex-column">
-                <h3 style="font-family: 'Georgia', serif; font-weight: bold">European Art</h3>
+                <h3>European Art</h3>
                 <p class="card-text flex-grow-1">Journey through centuries of creativity in this breathtaking exhibition of European 
                     masterpieces! From the luminous Renaissance portraits to the dramatic Baroque scenes, the dreamy Impressionist landscapes 
                     to the bold strokes of Modernism—discover the evolution of art across time and cultures.</p>
@@ -225,7 +239,7 @@ body {
             </div>
             <div class="col-md-6">
                 <div class="card-body d-flex flex-column">
-                <h3 style="font-family: 'Georgia', serif; font-weight: bold">Classical Art</h3>
+                <h3>Classical Art</h3>
                 <p class="card-text flex-grow-1">Step into the golden age of antiquity with this exquisite collection of Greek and Roman 
                     masterpieces. Discover the perfect proportions of marble gods, the dramatic storytelling of mythological frescoes, and the 
                     delicate beauty of Hellenistic sculptures. From powerful athletes to graceful goddesses, each work embodies the classical 
@@ -244,7 +258,7 @@ body {
             </div>
             <div class="col-md-6">
                 <div class="card-body d-flex flex-column">
-                <h3 style="font-family: 'Georgia', serif; font-weight: bold">Abstract Art</h3>
+                <h3>Abstract Art</h3>
                 <p class="card-text flex-grow-1">Dive into a world where colors, shapes, and emotions break free from tradition! 
                     This exhibition celebrates the revolutionary power of abstract art—from Kandinsky’s vibrant compositions to Pollock’s 
                     dynamic drips. Discover how artists abandoned realism to express pure energy, rhythm, and feeling.</p>
@@ -254,7 +268,7 @@ body {
         </div>
         </div>
 
-        <button class="see-button" style="max-width: 300px; width: 100%;">See all</button>
+        <button class="see-button">See all</button>
     </div>
     </div>
 
@@ -295,14 +309,6 @@ body {
         </div>
     </footer>  
 
-    <script>
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-    </script> 
+    <script src="script.js"></script> 
 </body>
 </html>
