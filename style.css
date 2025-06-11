@@ -83,6 +83,10 @@
     background-color: #fff;
     color: #000;
 }
+.nav-button-menu:hover {
+    background-color: #fff;
+    color: #000;
+}
 .menu-toggle {
     display: none;
     background: none;

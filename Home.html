@@ -38,7 +38,6 @@
     }       
     .logo-line {
         font-size: 1.3rem;
-        font-weight: normal;
         font-family: 'Georgia', serif;
     }
     /*Поисковая строка */
@@ -51,7 +50,7 @@
     .search-input {
         width: 100%;
         padding: 0.6rem 1rem; /*сверху/снизу и слева/справа*/
-        border: 1px solid #555;
+        border: 1px solid #555; /*сплошная*/
         background-color: #222;
         color: #fff;
         font-size: 1rem;
@@ -88,10 +87,14 @@
         text-transform: uppercase; /*капс*/
         cursor: pointer;
         transition: all 0.3s; /*плавный переход для всех свойств*/
-        white-space: nowrap;/*нельзяьделать пренос*/
+        white-space: nowrap;/*нельзя делать пренос*/
         width: 100%;
         }      
     .nav-button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+    .nav-button-menu:hover {
         background-color: #fff;
         color: #000;
     }
@@ -125,7 +128,7 @@
         position: relative;/*для опред места*/
         height: 700px;
         width: 100%;
-        overflow: hidden; /*обрезает лишний контент*/
+        overflow: hidden; /*Полосы прокрутки никогда не появятся*/
     }     
     .banner-img {
         width: 100%;
@@ -159,11 +162,11 @@
         transform: translateY(-5px);
     }
     .hologram {
-    transition: transform 0.5s;
+        transition: transform 0.5s;
     }
     .hologram:hover {
-        transform: perspective(800px) rotateY(20deg) scale(1.05);
-        filter: drop-shadow(0 0 10px rgba(255, 241, 114, 0.7));
+        transform: perspective(800px) rotateY(20deg) scale(1.05); /*смещение к нам поворот на 20град увеличение картинки на 5%*/
+        filter: drop-shadow(0 0 10px rgba(255, 241, 114, 0.7));/*тень*/
     }
     .card-img{
         object-fit: cover;
@@ -301,10 +304,10 @@
     </div>
 
     <div class="container my-5">
-    <div class="row justify-content-center"> <!-- Центрирует элементы по главной оси -->
+    <div class="row justify-content-center"> <!-- Центрирует элементы по главной оси гориз. -->
         <div class="col-12 col-lg-10">
         <div class="card border-0"> <!--полностью убирает границу -->
-            <div class="row g-0 align-items-center"> <!-- g-0 убирает промежутки между колонками -->
+            <div class="row g-0 align-items-center"> <!-- g-0 убирает промежутки между колонками верт.-->
             <div class="col-md-6">
                 <img src="images/2.jpg" class="img-fluid rounded hologram card-img">
             </div>
@@ -357,7 +360,7 @@
     
     <div class="container-fluid my-4">
         <div class="row justify-content-center">
-            <div class="col-lg-10 col-12 card-container">
+            <div class="col-lg-10 col-12">
                 <div class="row g-4">
                     <!-- Карточка 1 -->
                     <div class="col-lg-4 col-md-6 col-12">
